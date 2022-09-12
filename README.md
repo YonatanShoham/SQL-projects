@@ -1,12 +1,12 @@
 # SQL-projects
 Contain 3 SQL projects
 
-Project 3 is the most extensive and complicated project containing 4 different databases.
+Project 3 is the most extensive and complicated project of the three containing 4 different unrelated databases.
 
 Project 3
 Part1 restaurant database
 
-This database conatin consumer restaurant ratings in Mexico.Including information about each restaurant and its cuisines, as well as each consumer and their unique preferences.
+This database conatin consumer restaurant ratings in Mexico. Including information about each restaurant and its cuisines, as well as each consumer and their unique preferences.
 
 The following segments of SQL code answer the questions below. 
 
@@ -98,6 +98,37 @@ segment 4
 
 Project 1
 This project have 10 SQL segments that reaserch the connection between players of various video games to how much money and time they spent on each game and what payment methods they use wich affect sales of items in the various video games.
+
+segment 1
+This segment relate between players their email and their credit card type with priortization of certain credit card types over others.
+
+segment 2
+This segment relate between player  age_group,their gender and the credit card type number per the above categories.
+
+segment 3
+This segment relate specific games and their each respective number of sessions, the bigger the number of sessions the assumption is that the game is more popular while considering more factors.
+
+segment 4
+This segment relate specific games and their each respective total playing time in minutes. The bigger the amount of time spent the assumption is that the game is more popular while considering more factors similar to the previous segment.
+
+segment 5
+This segment relate specific age groups,games and their each respective total playing time in minutes. The bigger the amount of time spent the assumption is that the game is more popular while considering more factors similar to the last segments.
+
+
+segment 6
+This segment relate between players and their ingame money balance in their specific account.
+
+segment 7
+This segment count the number of sessions wich ended for the player in loss or gain of his ingame money. 
+
+segment 8
+This segment count the gender and age group of the players,and in relation to this parametters wich session ended for the player in loss or gain of his ingame money. 
+
+segment 9
+This segment relate between specific players and their total balance of ingame money.
+
+segment 10
+This segment sum the total balance of ingame money and seperate between gain and loss of all the players,when the player win the company looses and vice versa.
 
 
 Project 2
