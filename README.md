@@ -1,5 +1,9 @@
 # SQL-projects
-Contain SQL projects
+Contain 3 SQL projects
+
+Project 3 is the most extensive and complicated project containing 4 different databases.
+
+Project 3
 Part1 restaurant database
 
 This database conatin consumer restaurant ratings in Mexico.Including information about each restaurant and its cuisines, as well as each consumer and their unique preferences.
@@ -91,4 +95,11 @@ segment 2
 How much money is tied up in inventory at the toy stores? How long will it last?
 segment 4
 
+
+Project 1
+This project have 10 SQL segments that reaserch the connection between players of various video games to how much money and time they spent on each game and what payment methods they use wich affect sales of items in the various video games.
+
+
+Project 2
+This project contain 18 segments that reaserch the connection between authors,articels,the product that the articler published, and the traffic and views of each article trying to measure it's popularity. 
 
