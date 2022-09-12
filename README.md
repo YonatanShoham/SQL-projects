@@ -1,7 +1,7 @@
 # SQL-projects
 Contain SQL projects
 
-Final project is the most extensive and complicated project of the three containing 4 different unrelated databases.
+Final project contain 4 different unrelated databases, each one with his own theme.
 
 Final project
 
