@@ -1,9 +1,9 @@
 # SQL-projects
-Contain 3 SQL projects
+Contain SQL projects
 
-Project 3 is the most extensive and complicated project of the three containing 4 different unrelated databases.
+Final project is the most extensive and complicated project of the three containing 4 different unrelated databases.
 
-Project 3
+Final project
 
 Part1 restaurant database
 
@@ -138,7 +138,5 @@ This segment sum the total balance of ingame money and seperate between gain and
 This segment present only the best and the worst 3 months of the game company in terms of gain and loss.
 
 
-Project 2
 
-This project contain 18 segments that reaserch the connection between authors,articels,the product that the articler published, and the traffic and views of each article trying to measure it's popularity. 
 
