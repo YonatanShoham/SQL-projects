@@ -4,6 +4,7 @@ Contain 3 SQL projects
 Project 3 is the most extensive and complicated project of the three containing 4 different unrelated databases.
 
 Project 3
+
 Part1 restaurant database
 
 This database conatin consumer restaurant ratings in Mexico. Including information about each restaurant and its cuisines, as well as each consumer and their unique preferences.
@@ -80,7 +81,6 @@ Part4 toy Sales database
 
 Sales & inventory data for a fictitious chain of toy stores in Mexico, including information about products, stores, daily sales transactions, and current inventory levels at each location.
 
-
 The following segments of SQL code answer the questions below. 
 
 Which product categories drive the biggest profits? Is this the same across store locations?
@@ -115,7 +115,6 @@ This segment relate specific games and their each respective total playing time 
 segment 5
 This segment relate specific age groups,games and their each respective total playing time in minutes. The bigger the amount of time spent the assumption is that the game is more popular while considering more factors similar to the last segments.
 
-
 segment 6
 This segment relate between players and their ingame money balance in their specific account.
 
@@ -131,7 +130,15 @@ This segment relate between specific players and their total balance of ingame m
 segment 10
 This segment sum the total balance of ingame money and seperate between gain and loss of all the players,when the player win the company looses and vice versa.
 
+segment 11
+This segment sum the total balance of ingame money and seperate between gain and loss of all the players seperated to quarter and year.
+
+segment 12
+This segment sum the total balance of ingame money and seperate between gain and loss of all the players seperated to month and year.
+This segment present only the best and the worst 3 months of the game company in terms of gain and loss.
+
 
 Project 2
+
 This project contain 18 segments that reaserch the connection between authors,articels,the product that the articler published, and the traffic and views of each article trying to measure it's popularity. 
 
