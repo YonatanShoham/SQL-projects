@@ -138,5 +138,56 @@ This segment sum the total balance of ingame money and seperate between gain and
 This segment present only the best and the worst 3 months of the game company in terms of gain and loss.
 
 
+Project 2
+
+This project contain 15 segments that reaserch the connection between authors, articels, the product that the articler published, and the traffic and views of each article trying to measure it's popularity. 
+
+segment 1
+This segment relate between the author and the article he wrote.
+
+segment 2
+This segment relate between article and it's daily views.
+
+segment 3
+This segment relate between the product and it's category.
+
+segment 4
+This segment relate between article,it's daily views,the product the article advertise and the product views.
+
+segment 5
+This segment relate between article,it's total views and the sum of product views.
+
+segment 6
+This segment relate between the product the article that advertised the product and the sum of product views.
+
+segment 7
+This segment relate between article and it's total daily views
+
+segment 8
+This segment relate between the author that wrote the article, the number of articles he wrote and the total views of all the author articles.
+
+segment 9
+This segment relate between the author that wrote the article,it's daily views,
+and the total views per each articles category.
+
+segment 10
+This segment relate between the specific category,the specific product,the sum of product views, total views per category and the percentage of total product views per total views per category. 
+
+segment 11
+This segment relate between month number, weekly day number, total daily article views, total monthly article views and the percentage of total daily article views per total monthly article views.
+
+segment 12
+This segment relate between date, articles, total daily article views,total daily views of all articles combined and the percentage of total daily article views per views of all articles combined.
+
+segment 13
+This segment relate between articles, it's total views and ranking by total views where the articles with the largest article views get the rank 1. 
+
+segment 14
+This segment relate between category, product, total product views and ranking by total views where the product with the largest product views get the rank 1. 
+
+segment 15
+This segment relate between articles, date, views of the prevoius day, views of the current day and the percentage of views of the prevoius day per views of the current day. 
+
+
 
 
