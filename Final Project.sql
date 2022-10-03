@@ -152,8 +152,17 @@ JOIN RESTAURANTS RE
 ON R.RESTAURANT_ID=RE.RESTAURANT_ID
 JOIN consumers c
 ON R.Consumer_ID=c.Consumer_ID
-
 ;
+
+---11
+SELECT Cuisine,Overall_Rating,food_rating,service_rating
+FROM RATINGS R
+JOIN RESTAURANTS RE
+ON R.RESTAURANT_ID=RE.RESTAURANT_ID
+JOIN consumers c
+ON R.Consumer_ID=c.Consumer_ID
+;
+
 ---
 Part2
 ---1
@@ -213,9 +222,6 @@ FROM marketing_data
 Part3
 
 
-SELECT *
-FROM tmp
-;
 ---1
 SELECT AGE,COUNT(AGE) AS num_of_same_age_gold_medal
 FROM tmp
