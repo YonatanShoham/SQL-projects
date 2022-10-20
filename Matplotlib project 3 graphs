@@ -1,0 +1,70 @@
+Project 3 part 1 graph 1
+
+import pandas as pd
+sample=pd.read_csv('avg.csv')
+from matplotlib import pyplot as plt
+plt.plot (sample.Avg_overall_rating,'o')
+plt.title("Project 3 part 1 graph 1")
+plt.xlabel("Restaurant")
+plt.ylabel("Avg_overall_rating")
+plt.showׁׁׂׂׂ()
+
+
+Project 3 part 1 graph 2
+
+import pandas as pd
+sample=pd.read_csv('avg.csv')
+from matplotlib import pyplot as plt
+plt.plot (sample.Avg_food_rating,'o')
+plt.title("Project 3 part 1 graph 2")
+plt.xlabel("Restaurant")
+plt.ylabel("Avg_food_rating")
+plt.showׁׁׂׂׂ()
+
+
+Project 3 part 1 graph 3
+
+import pandas as pd
+sample=pd.read_csv('avg.csv')
+from matplotlib import pyplot as plt
+plt.plot (sample.Avg_service_rating,'o')
+plt.title("Project 3 part 1 graph 3")
+plt.xlabel("Restaurant")
+plt.ylabel("Avg_service_rating")
+plt.showׁׁׂׂׂ()
+
+
+Project 3 part 3 graph 1
+
+import pandas as pd
+sample=pd.read_csv('avg2.csv')
+from matplotlib import pyplot as plt
+plt.plot (sample.year,sample.age,'o')
+plt.title("Project 3 part 3 graph 1")
+plt.xlabel("year")
+plt.ylabel("avg_age")
+plt.show()
+
+
+Project 3 part 3 graph 2
+
+import pandas as pd
+sample=pd.read_csv('avg2.csv')
+from matplotlib import pyplot as plt
+plt.plot (sample.year,sample.weight,'o')
+plt.title("Project 3 part 3 graph 2")
+plt.xlabel("year")
+plt.ylabel("avg_weight")
+plt.show()
+
+
+Project 3 part 3 graph 3
+
+import pandas as pd
+sample=pd.read_csv('avg2.csv')
+from matplotlib import pyplot as plt
+plt.plot (sample.year,sample.height,'o')
+plt.title("Project 3 part 3 graph 3")
+plt.xlabel("year")
+plt.ylabel("avg_height")
+plt.show()
