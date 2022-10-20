@@ -34,6 +34,62 @@ plt.ylabel("Avg_service_rating")
 plt.showׁׁׂׂׂ()
 
 
+Project 3 part 2 graph 1
+
+import pandas as pd
+sample=pd.read_csv('avg1.csv')
+from matplotlib import pyplot as plt
+plt.plot (sample.c1,'o')
+plt.title("Project 3 part 2 graph 1")
+plt.xlabel("customer")
+plt.ylabel("campaing 1")
+plt.show()
+
+	
+Project 3 part 2 graph 2
+	
+sample=pd.read_csv('avg1.csv')
+from matplotlib import pyplot as plt
+plt.plot (sample.c2,'o')
+plt.title("Project 3 part 2 graph 2")
+plt.xlabel("customer")
+plt.ylabel("campaing 2")
+plt.show()
+
+	
+Project 3 part 2 graph 3
+	
+sample=pd.read_csv('avg1.csv')
+from matplotlib import pyplot as plt
+plt.plot (sample.c3,'o')
+plt.title("Project 3 part 2 graph 3")
+plt.xlabel("customer")
+plt.ylabel("campaing 3")
+plt.show()
+    
+    
+Project 3 part 2 graph 4
+	
+sample=pd.read_csv('avg1.csv')
+from matplotlib import pyplot as plt
+plt.plot (sample.c4,'o')
+plt.title("Project 3 part 2 graph 3")
+plt.xlabel("customer")
+plt.ylabel("campaing 4")
+plt.show()
+ 
+    
+Project 3 part 2 graph 5
+
+sample=pd.read_csv('avg1.csv')
+from matplotlib import pyplot as plt
+plt.plot (sample.c5,'o')
+plt.title("Project 3 part 2 graph 3")
+plt.xlabel("customer")
+plt.ylabel("campaing 5")
+plt.show()
+	
+
 Project 3 part 3 graph 1
 
 import pandas as pd
