@@ -4,7 +4,7 @@ Part1
 
 ---1
 SELECT R.Consumer_ID,
- RE.name AS name_of_restaurant, Overall_Rating,food_rating
+ RE.name AS name_of_restaurant,Overall_Rating,food_rating
 ,service_rating
 FROM RATINGS R
 JOIN RESTAURANTS RE
@@ -52,7 +52,7 @@ ORDER BY AVG(Overall_Rating) DESC,AVG(food_rating) DESC,AVG(service_rating) DESC
 
 ---5
 SELECT DISTINCT R.Consumer_ID,
- RE.name AS name_of_restaurant,Cuisine,preferred_cuisine, Overall_Rating,food_rating
+ RE.name AS name_of_restaurant,Cuisine,preferred_cuisine,Overall_Rating,food_rating
 ,service_rating
 FROM RATINGS R
 JOIN RESTAURANTS RE
@@ -68,7 +68,7 @@ ORDER BY Overall_Rating DESC
 
 ---6
 SELECT DISTINCT R.Consumer_ID,
- RE.name AS name_of_restaurant,Cuisine,preferred_cuisine, Overall_Rating,food_rating
+ RE.name AS name_of_restaurant,Cuisine,preferred_cuisine,Overall_Rating,food_rating
 ,service_rating
 FROM RATINGS R
 JOIN RESTAURANTS RE
@@ -146,7 +146,6 @@ AS num_of_restaurant
 AS num_of_reveiews,COUNT( food_rating)
 AS num_of_food_ratings,COUNT( service_rating)
 AS num_of_service_ratings
-
 FROM RATINGS R
 JOIN RESTAURANTS RE
 ON R.RESTAURANT_ID=RE.RESTAURANT_ID
