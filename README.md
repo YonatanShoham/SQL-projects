@@ -98,7 +98,7 @@ segment 4
 
 Project 1 relies on one database wich is called arena.
 
-This project have 10 SQL segments that reaserch the connection between players of various video games to how much money and time they spent on each game and what payment methods they use wich affect sales of items in the various video games.
+This project have 12 SQL segments that reaserch the connection between players of various video games to how much money and time they spent on each game and what payment methods they use wich affect sales of items in the various video games.
 
 segment 1
 This segment relate between players their email and their credit card type with priortization of certain credit card types over others.
