@@ -162,6 +162,89 @@ JOIN consumers c
 ON R.Consumer_ID=c.Consumer_ID
 ;
 
+---12
+SELECT 
+    Cuisine, COUNT(*) AS Cuisine_Count
+FROM RATINGS R
+JOIN RESTAURANTS RE ON R.RESTAURANT_ID = RE.RESTAURANT_ID
+JOIN consumers c ON R.Consumer_ID = c.Consumer_ID
+JOIN restaurant_cuisines Rc ON R.Restaurant_ID = Rc.Restaurant_ID
+WHERE Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2
+GROUP BY Cuisine
+ORDER BY COUNT(*) DESC;
+ ;
+
+---13
+SELECT 
+    Price, COUNT(*) AS Price_Count
+FROM RATINGS R
+JOIN RESTAURANTS RE ON R.RESTAURANT_ID = RE.RESTAURANT_ID
+JOIN consumers c ON R.Consumer_ID = c.Consumer_ID
+JOIN restaurant_cuisines Rc ON R.Restaurant_ID = Rc.Restaurant_ID
+WHERE Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2
+GROUP BY Price
+ORDER BY COUNT(*) DESC;
+;
+
+---14
+SELECT 
+    Franchise, COUNT(*) AS Franchise_Count
+FROM RATINGS R
+JOIN RESTAURANTS RE ON R.RESTAURANT_ID = RE.RESTAURANT_ID
+JOIN consumers c ON R.Consumer_ID = c.Consumer_ID
+JOIN restaurant_cuisines Rc ON R.Restaurant_ID = Rc.Restaurant_ID
+WHERE Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2
+GROUP BY Franchise
+ORDER BY COUNT(*) DESC;
+;
+
+---15
+SELECT 
+    Area, COUNT(*) AS Area_Count
+FROM RATINGS R
+JOIN RESTAURANTS RE ON R.RESTAURANT_ID = RE.RESTAURANT_ID
+JOIN consumers c ON R.Consumer_ID = c.Consumer_ID
+JOIN restaurant_cuisines Rc ON R.Restaurant_ID = Rc.Restaurant_ID
+WHERE Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2
+GROUP BY Area
+ORDER BY COUNT(*) DESC;
+;
+
+---16
+SELECT 
+    Alcohol_Service, COUNT(*) AS Alcohol_Service_Count
+FROM RATINGS R
+JOIN RESTAURANTS RE ON R.RESTAURANT_ID = RE.RESTAURANT_ID
+JOIN consumers c ON R.Consumer_ID = c.Consumer_ID
+JOIN restaurant_cuisines Rc ON R.Restaurant_ID = Rc.Restaurant_ID
+WHERE Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2
+GROUP BY Alcohol_Service
+ORDER BY COUNT(*) DESC;
+;
+
+---17
+SELECT 
+    Smoking_Allowed, COUNT(*) AS Smoking_Allowed_Count
+FROM RATINGS R
+JOIN RESTAURANTS RE ON R.RESTAURANT_ID = RE.RESTAURANT_ID
+JOIN consumers c ON R.Consumer_ID = c.Consumer_ID
+JOIN restaurant_cuisines Rc ON R.Restaurant_ID = Rc.Restaurant_ID
+WHERE Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2
+GROUP BY Smoking_Allowed
+ORDER BY COUNT(*) DESC;
+;
+
+---18
+SELECT 
+    Parking, COUNT(*) AS Parking_Count
+FROM RATINGS R
+JOIN RESTAURANTS RE ON R.RESTAURANT_ID = RE.RESTAURANT_ID
+JOIN consumers c ON R.Consumer_ID = c.Consumer_ID
+JOIN restaurant_cuisines Rc ON R.Restaurant_ID = Rc.Restaurant_ID
+WHERE Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2
+GROUP BY Parking
+ORDER BY COUNT(*) DESC;
+
 ---
 Part2
 
