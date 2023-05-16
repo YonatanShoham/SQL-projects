@@ -154,96 +154,106 @@ ON R.Consumer_ID=c.Consumer_ID
 ;
 
 ---11
-SELECT Cuisine,Overall_Rating,food_rating,service_rating
+SELECT 
+    Cuisine,
+COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) AS Cuisine_Count_Where,
+COUNT(*) AS Total_Cuisine,
+COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 /COUNT(*)   AS Cuisine_Percentage_Where
 FROM RATINGS R
-JOIN RESTAURANTS RE
-ON R.RESTAURANT_ID=RE.RESTAURANT_ID
-JOIN consumers c
-ON R.Consumer_ID=c.Consumer_ID
-;
+JOIN RESTAURANTS RE ON R.RESTAURANT_ID = RE.RESTAURANT_ID
+JOIN consumers c ON R.Consumer_ID = c.Consumer_ID
+JOIN restaurant_cuisines Rc ON R.Restaurant_ID = Rc.Restaurant_ID
+GROUP BY Cuisine
+ORDER BY COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 /COUNT(*) 
+ DESC
+ ;
+
 
 ---12
 SELECT 
-    Cuisine, COUNT(*) AS Cuisine_Count
+    Price,
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) AS Price_Count_Where,
+    COUNT(*) AS Total_Price,
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 / COUNT(*) AS Price_Percentage_Where
 FROM RATINGS R
 JOIN RESTAURANTS RE ON R.RESTAURANT_ID = RE.RESTAURANT_ID
 JOIN consumers c ON R.Consumer_ID = c.Consumer_ID
 JOIN restaurant_cuisines Rc ON R.Restaurant_ID = Rc.Restaurant_ID
-WHERE Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2
-GROUP BY Cuisine
-ORDER BY COUNT(*) DESC;
- ;
+GROUP BY Price
+ORDER BY COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 / COUNT(*) DESC
+;
 
 ---13
 SELECT 
-    Price, COUNT(*) AS Price_Count
+    Franchise,
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) AS Franchise_Count_Where,
+    COUNT(*) AS Total_Franchise,
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 / COUNT(*) AS Franchise_Percentage_Where
 FROM RATINGS R
 JOIN RESTAURANTS RE ON R.RESTAURANT_ID = RE.RESTAURANT_ID
 JOIN consumers c ON R.Consumer_ID = c.Consumer_ID
 JOIN restaurant_cuisines Rc ON R.Restaurant_ID = Rc.Restaurant_ID
-WHERE Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2
-GROUP BY Price
-ORDER BY COUNT(*) DESC;
+GROUP BY Franchise
+ORDER BY COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 / COUNT(*) DESC
 ;
 
 ---14
 SELECT 
-    Franchise, COUNT(*) AS Franchise_Count
+    Area,
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) AS Area_Count_Where,
+    COUNT(*) AS Total_Area,
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 / COUNT(*) AS Area_Percentage_Where
 FROM RATINGS R
 JOIN RESTAURANTS RE ON R.RESTAURANT_ID = RE.RESTAURANT_ID
 JOIN consumers c ON R.Consumer_ID = c.Consumer_ID
 JOIN restaurant_cuisines Rc ON R.Restaurant_ID = Rc.Restaurant_ID
-WHERE Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2
-GROUP BY Franchise
-ORDER BY COUNT(*) DESC;
+GROUP BY Area
+ORDER BY COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 / COUNT(*) DESC
 ;
 
 ---15
 SELECT 
-    Area, COUNT(*) AS Area_Count
+    Alcohol_Service,
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) AS Alcohol_Service_Count_Where,
+    COUNT(*) AS Total_Alcohol_Service,
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 / COUNT(*) AS Alcohol_Service_Percentage_Where
 FROM RATINGS R
 JOIN RESTAURANTS RE ON R.RESTAURANT_ID = RE.RESTAURANT_ID
 JOIN consumers c ON R.Consumer_ID = c.Consumer_ID
 JOIN restaurant_cuisines Rc ON R.Restaurant_ID = Rc.Restaurant_ID
-WHERE Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2
-GROUP BY Area
-ORDER BY COUNT(*) DESC;
+GROUP BY Alcohol_Service
+ORDER BY COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 / COUNT(*) DESC
 ;
 
 ---16
 SELECT 
-    Alcohol_Service, COUNT(*) AS Alcohol_Service_Count
+    Parking,
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) AS Parking_Count_Where,
+    COUNT(*) AS Total_Parking,
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 / COUNT(*) AS Parking_Percentage_Where
 FROM RATINGS R
 JOIN RESTAURANTS RE ON R.RESTAURANT_ID = RE.RESTAURANT_ID
 JOIN consumers c ON R.Consumer_ID = c.Consumer_ID
 JOIN restaurant_cuisines Rc ON R.Restaurant_ID = Rc.Restaurant_ID
-WHERE Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2
-GROUP BY Alcohol_Service
-ORDER BY COUNT(*) DESC;
+GROUP BY Parking
+ORDER BY COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 / COUNT(*) DESC
+
+
 ;
 
 ---17
 SELECT 
-    Smoking_Allowed, COUNT(*) AS Smoking_Allowed_Count
+    Smoking_Allowed,
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) AS Smoking_Allowed_Count_Where,
+    COUNT(*) AS Total_Smoking_Allowed,
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 / COUNT(*) AS Smoking_Allowed_Percentage_Where
 FROM RATINGS R
 JOIN RESTAURANTS RE ON R.RESTAURANT_ID = RE.RESTAURANT_ID
 JOIN consumers c ON R.Consumer_ID = c.Consumer_ID
 JOIN restaurant_cuisines Rc ON R.Restaurant_ID = Rc.Restaurant_ID
-WHERE Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2
 GROUP BY Smoking_Allowed
-ORDER BY COUNT(*) DESC;
+ORDER BY COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 / COUNT(*) DESC
 ;
-
----18
-SELECT 
-    Parking, COUNT(*) AS Parking_Count
-FROM RATINGS R
-JOIN RESTAURANTS RE ON R.RESTAURANT_ID = RE.RESTAURANT_ID
-JOIN consumers c ON R.Consumer_ID = c.Consumer_ID
-JOIN restaurant_cuisines Rc ON R.Restaurant_ID = Rc.Restaurant_ID
-WHERE Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2
-GROUP BY Parking
-ORDER BY COUNT(*) DESC;
 
 ---
 Part2
