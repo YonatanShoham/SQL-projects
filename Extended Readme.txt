@@ -23,6 +23,38 @@ cuisine, number of reveiews
 
 Is there a link between consumer preferences and ratings? segment 8
 
+segment 11 to 18
+This part provides statistics for each attribute (Cuisine, Price, Franchise, Area, Alcohol_Service, Smoking_Allowed, Parking) based on the ratings of the restaurants. It focuses on restaurants with the highest possible scores for overall rating, food rating, and service rating.
+
+The results include the following information:
+
+Attribute Count: The number of restaurants that received the highest possible score for the attribute.
+
+Total Count: The total number of restaurants for the attribute, regardless of the rating conditions.
+
+Attribute Percentage: The percentage of restaurants that meet the rating conditions for the attribute, out of the total count for that attribute.
+
+The results are ordered in descending order based on the attribute count percentage.
+
+The purpose of this section is to identify the top qualities in successful restaurants.
+
+Here are the key findings for each attribute:
+
+Cuisine: The top cuisines with the highest percentage of restaurants meeting the rating conditions are International, Vietnamese, and Brewery.
+
+Price: Restaurants in the high price range have the highest percentage of meeting the rating conditions.
+
+Franchise: Non-franchise restaurants have approximately 6% higher percentage than franchise restaurants in meeting the rating conditions.
+
+Area: Restaurants with closed areas have approximately 6% higher percentage than open-spaced restaurants in meeting the rating conditions.
+
+Alcohol Service: Restaurants with full bar service have the highest percentage of meeting the rating conditions.
+
+Parking: Restaurants with valet parking have the highest percentage of meeting the rating conditions.
+
+Smoking: Restaurants where smoking is allowed only in their bar area have the highest percentage of meeting the rating conditions.
+
+
 Are there any demand and supply gaps in the industry that you might take advantage of? Which features would you look for in a restaurant if you were to invest?
 
 I would look for a score of two scores sections of 2 and one score section of 1 or zero thus with an imrpovement of one section of the bussiness it can reach a total of the best score this rating system could grant for it.
