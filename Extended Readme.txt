@@ -23,7 +23,7 @@ cuisine, number of reveiews
 
 Is there a link between consumer preferences and ratings? segment 8
 
-segment 11 to 18
+segment 11 to 17
 This part provides statistics for each attribute (Cuisine, Price, Franchise, Area, Alcohol_Service, Smoking_Allowed, Parking) based on the ratings of the restaurants. It focuses on restaurants with the highest possible scores for overall rating, food rating, and service rating.
 
 The results include the following information:
