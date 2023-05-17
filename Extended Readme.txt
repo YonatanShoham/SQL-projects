@@ -54,6 +54,22 @@ Parking: Restaurants with valet parking have the highest percentage of meeting t
 
 Smoking: Restaurants where smoking is allowed only in their bar area have the highest percentage of meeting the rating conditions.
 
+explanation for segments 18-25
+Smoker: No specific pattern is observed based on the given information. The reviews given by smokers do not show a significant trend in terms of the overall rating, food rating, and service rating.
+
+Drink_Level: Social drinkers tend to give the best reviews. It implies that customers who enjoy social drinking activities are more likely to provide positive feedback on the overall dining experience, food quality, and service.
+
+Transportation_Method: Customers who use cars for transportation tend to give the best reviews. This suggests that individuals who use cars to visit restaurants are more likely to have a positive perception of their dining experience, potentially due to the convenience and ease of access provided by car transportation.
+
+Marital_Status: Married customers tend to give the best reviews. This indicates that individuals who are married are more likely to have positive experiences and provide favorable feedback on the overall rating, food quality, and service at restaurants.
+
+Children: Customers with dependent children tend to give the best reviews. It suggests that individuals who visit restaurants with their children and have dependent family members are more likely to have positive dining experiences and rate the overall experience, food quality, and service more favorably.
+
+Age: Customers of ages 45, 60, 72, and 43 tend to give the best reviews. This suggests that individuals within these specific age groups are more likely to have positive dining experiences and provide higher ratings for the overall experience, food quality, and service at restaurants.
+
+Occupation: Employed customers tend to give the best reviews. It implies that individuals who are employed, regardless of their specific occupation, are more likely to have positive dining experiences and rate the overall experience, food quality, and service more favorably.
+
+Budget: Customers with a higher budget tend to give the best reviews. This indicates that individuals who have a higher spending capacity and are willing to allocate a larger budget for dining out are more likely to have positive experiences and rate the overall experience, food quality, and service more positively.
 
 Are there any demand and supply gaps in the industry that you might take advantage of? Which features would you look for in a restaurant if you were to invest?
 
