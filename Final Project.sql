@@ -237,8 +237,6 @@ JOIN consumers c ON R.Consumer_ID = c.Consumer_ID
 JOIN restaurant_cuisines Rc ON R.Restaurant_ID = Rc.Restaurant_ID
 GROUP BY Parking
 ORDER BY COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 / COUNT(*) DESC
-
-
 ;
 
 ---17
@@ -255,9 +253,142 @@ GROUP BY Smoking_Allowed
 ORDER BY COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 / COUNT(*) DESC
 ;
 
----
-Part2
+---18
+SELECT Smoker,
+COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 
+AND service_rating = 2 THEN 1 END) AS Cuisine_Count_Where,
+COUNT(*) AS Total_Cuisine,
+COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 /COUNT(*)   AS Cuisine_Percentage_Where
+FROM RATINGS R
+JOIN RESTAURANTS RE ON R.RESTAURANT_ID = RE.RESTAURANT_ID
+JOIN consumers c ON R.Consumer_ID = c.Consumer_ID
+JOIN restaurant_cuisines Rc ON R.Restaurant_ID = Rc.Restaurant_ID
+GROUP BY Smoker
+ORDER BY COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 /COUNT(*) 
+ DESC
+;
 
+---19
+SELECT
+    Budget,
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) AS Cuisine_Count_Where,
+    COUNT(*) AS Total_Cuisine,
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 / COUNT(*) AS Cuisine_Percentage_Where
+FROM
+    RATINGS R
+    JOIN RESTAURANTS RE ON R.RESTAURANT_ID = RE.RESTAURANT_ID
+    JOIN consumers C ON R.Consumer_ID = C.Consumer_ID
+    JOIN restaurant_cuisines Rc ON R.Restaurant_ID = Rc.Restaurant_ID
+GROUP BY
+    Budget
+ORDER BY
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 / COUNT(*) DESC
+;
+
+---20
+SELECT
+    Occupation,
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) AS Cuisine_Count_Where,
+    COUNT(*) AS Total_Cuisine,
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 / COUNT(*) AS Cuisine_Percentage_Where
+FROM
+    RATINGS R
+    JOIN RESTAURANTS RE ON R.RESTAURANT_ID = RE.RESTAURANT_ID
+    JOIN consumers C ON R.Consumer_ID = C.Consumer_ID
+    JOIN restaurant_cuisines Rc ON R.Restaurant_ID = Rc.Restaurant_ID
+GROUP BY
+    Occupation
+ORDER BY
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 / COUNT(*) DESC
+;
+
+---21
+SELECT
+    Age,
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) AS Cuisine_Count_Where,
+    COUNT(*) AS Total_Cuisine,
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 / COUNT(*) AS Cuisine_Percentage_Where
+FROM
+    RATINGS R
+    JOIN RESTAURANTS RE ON R.RESTAURANT_ID = RE.RESTAURANT_ID
+    JOIN consumers C ON R.Consumer_ID = C.Consumer_ID
+    JOIN restaurant_cuisines Rc ON R.Restaurant_ID = Rc.Restaurant_ID
+GROUP BY
+    Age
+ORDER BY
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 / COUNT(*) DESC
+;
+
+---22
+SELECT
+    Transportation_Method,
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) AS Cuisine_Count_Where,
+    COUNT(*) AS Total_Cuisine,
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 / COUNT(*) AS Cuisine_Percentage_Where
+FROM
+    RATINGS R
+    JOIN RESTAURANTS RE ON R.RESTAURANT_ID = RE.RESTAURANT_ID
+    JOIN consumers C ON R.Consumer_ID = C.Consumer_ID
+    JOIN restaurant_cuisines Rc ON R.Restaurant_ID = Rc.Restaurant_ID
+GROUP BY
+    Transportation_Method
+ORDER BY
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 / COUNT(*) DESC
+;
+
+
+---23
+ SELECT
+    Drink_Level,
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) AS Cuisine_Count_Where,
+    COUNT(*) AS Total_Cuisine,
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 / COUNT(*) AS Cuisine_Percentage_Where
+FROM
+    RATINGS R
+    JOIN RESTAURANTS RE ON R.RESTAURANT_ID = RE.RESTAURANT_ID
+    JOIN consumers C ON R.Consumer_ID = C.Consumer_ID
+    JOIN restaurant_cuisines Rc ON R.Restaurant_ID = Rc.Restaurant_ID
+GROUP BY
+    Drink_Level
+ORDER BY
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 / COUNT(*) DESC
+;
+
+---24
+	SELECT
+    Marital_Status,
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) AS Cuisine_Count_Where,
+    COUNT(*) AS Total_Cuisine,
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 / COUNT(*) AS Cuisine_Percentage_Where
+FROM
+    RATINGS R
+    JOIN RESTAURANTS RE ON R.RESTAURANT_ID = RE.RESTAURANT_ID
+    JOIN consumers C ON R.Consumer_ID = C.Consumer_ID
+    JOIN restaurant_cuisines Rc ON R.Restaurant_ID = Rc.Restaurant_ID
+GROUP BY
+    Marital_Status
+ORDER BY
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 / COUNT(*) DESC
+;
+
+---25
+SELECT
+    Children,
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) AS Cuisine_Count_Where,
+    COUNT(*) AS Total_Cuisine,
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 / COUNT(*) AS Cuisine_Percentage_Where
+FROM
+    RATINGS R
+    JOIN RESTAURANTS RE ON R.RESTAURANT_ID = RE.RESTAURANT_ID
+    JOIN consumers C ON R.Consumer_ID = C.Consumer_ID
+    JOIN restaurant_cuisines Rc ON R.Restaurant_ID = Rc.Restaurant_ID
+GROUP BY
+    Children
+ORDER BY
+    COUNT(CASE WHEN Overall_Rating = 2 AND food_rating = 2 AND service_rating = 2 THEN 1 END) * 100.0 / COUNT(*) DESC
+;
+
+Part 2
 
 ---1
 SELECT *
